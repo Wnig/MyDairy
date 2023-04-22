@@ -1,0 +1,14 @@
+<!--note.wxml-->
+<view class="essay">
+	<view class="header">
+		<text class="time">{{time}}</text>
+	</view>
+	<view class="essay-con" style="height:{{heightCon}}rpx">
+    <text decode="true">{{notes[0].d_con}}</text>
+  </view>
+	<view class="smile-ico" bindtap="backTap">
+		<text class="eye-left"></text>
+		<text class="eye-right"></text>
+		<text class="lip"></text>
+	</view>
+</view>

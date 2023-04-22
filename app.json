@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/write/write",
+    "pages/mynote/my-note",
+    "pages/note/note"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "【Wink】",
+    "navigationBarTextStyle":"black"
+  }
+}

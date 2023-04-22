@@ -1,0 +1,48 @@
+<!--my-note.wxml-->
+<view class="container">
+  <view class="my-note-list">
+    <view class="eassy" wx:for="{{yearList}}" wx:key="yearList" wx:for-item="yearList" id="item-{{index}}">
+      <view class="year">{{yearList}}</view>
+        <view class="month-list" wx:if="{{yearList == util.sub(monthLists)}}" wx:for="{{monthLists}}" wx:key="monthLists" wx:for-item="monthLists">
+        <wxs module="util">
+            var sub = function(val) {
+                return val.substring(0, 4)
+            }
+            module.exports.sub = sub;
+
+            var sub2 = function(val) {
+                return val.substring(5, 7) > 9 ? val.substring(5, 7) : val.substring(6, 7)
+            }
+            module.exports.sub2 = sub2;
+
+            var sub3 = function(val) {
+                return val.substring(5, 7)
+            }
+            module.exports.sub3 = sub3;
+
+            var sub4 = function(val) {
+                return val.substring(8, 10) > 9 ? val.substring(8, 10) : val.substring(9, 10)
+            }
+            module.exports.sub4 = sub4;
+        </wxs>
+        <view class="month">
+          <view class="months">{{util.sub2(monthLists)}}<image src="../../images/time-bg.png"></image></view>
+        </view>
+        <view class="list-ul" id="item-{{index}}" wx:if="{{util.sub(monthLists) == util.sub(artList.d_time) && util.sub3(monthLists) == util.sub3(artList.d_time)}}" wx:for="{{artList}}" wx:key="artList"  wx:for-item="artList">
+            <view class="list-li">
+              <view class="cons" style="{{artList.txtStyle}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" bindtap="inNote" data-index="{{index}}" data-id="{{artList.d_id}}">
+                <text class="days">{{util.sub4(artList.d_time)}}</text>
+                <text class="essays">{{artList.d_con}}</text>
+              </view>
+              <view class="del" style="{{artList.delStyle}}" catchtap="delSel" data-index="{{index}}" data-id="{{artList.d_id}}">
+                  <image src="../../images/del.png" mode="widthFix"></image>
+              </view>  
+            </view>
+          </view>
+      </view>
+    </view>
+  </view>
+	<view class="cancel" bindtap="cancelTap">
+		<text>×</text>
+	</view>
+</view>

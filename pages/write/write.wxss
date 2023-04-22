@@ -1,0 +1,41 @@
+/**write.wxss**/
+.essay {
+	padding: 0 5%;
+}
+.header {
+  width: 100%;
+	height: 52rpx;
+	padding: 20rpx 0;
+  background-color: #fff;
+}
+.header .time {
+	float: left;
+	line-height: 42rpx;
+	color: #ededed;
+	font-size: 40rpx;
+}
+.header .finish {
+	float: right;
+	width: 42rpx;
+	height: 42rpx;
+	color: #ffc125;
+}
+#essayCon {
+	width: 100%;
+  height: 420rpx;
+  margin-top: 20rpx;
+	overflow-y: visible;
+	outline: none;
+	resize: none;
+  font-size: 38rpx;
+}
+.textcon text {
+  display: block;
+  width: 100%;
+  height: 30rpx;
+  color: #eee;
+  line-height: 30rpx;
+  text-align: right;
+  font-size: 30rpx;
+  background-color: #fff;
+}

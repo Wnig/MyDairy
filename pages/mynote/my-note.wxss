@@ -1,0 +1,112 @@
+/* pages/mynote/my-note.wxss */
+.container {
+  padding: 40rpx;
+}
+.cancel {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 184rpx;
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
+}
+.cancel text {
+	display: block;
+	width: 90rpx;
+	height: 90rpx;
+	margin:  20rpx auto;
+	border: 1rpx solid #000;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 85rpx;
+	font-size: 56rpx;
+	background-color: #fff;
+}
+.eassy {
+	margin-bottom: 80rpx;
+}
+.eassy .year {
+  width: 100%;
+	margin-bottom: 30rpx;
+  font-size: 54rpx;
+}
+.eassy .month {
+  width: 100%;
+  height: 46rpx;
+	margin-bottom: 20rpx;
+}
+.month .months {
+  position: relative;
+	float: left;
+	width: 10%;
+	height: 46rpx;
+	line-height: 38rpx;
+	text-align: center;
+	font-size: 50rpx;
+	font-weight: bold;
+}
+.month image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 78%;
+  height: 46rpx;
+  z-index: -1;
+}
+.eassy .list-ul {
+	padding: 8rpx;
+}
+.eassy .list-li {
+  position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 40rpx;
+}
+.eassy .cons {
+	position: relative;
+	width: 100%;
+	background-color: #fff;
+}
+.eassy .days {
+	position: absolute;
+	left: 1rpx;
+	top: 2rpx;
+	color: #ffc125;
+}
+.eassy .essays {
+	width: 100%;
+	text-indent: 60rpx;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+.eassy .del {
+	position: absolute;
+	right: 0;
+	top: 0; 
+	width: 10%;
+	height: 100%;
+  background-color: #f04155;
+	z-index: -1;  
+}
+.del image {
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 70%;
+  margin: auto;
+}
+.eassy .del-con {
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	transform: translateX(-10%);
+	-webkit-transform: translateX(-10%);
+}

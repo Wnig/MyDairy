@@ -1,0 +1,13 @@
+<!--write.wxml-->
+<view class="container">
+  <view class="essay">
+		<view class="header" fixed="true">
+			<text class="time">{{time}}</text>
+			<image src="../../images/finish.png" class="finish" bindtap="finish"></image>
+		</view>
+    <view class="textcon">
+      <text>还可输入{{nowLen}}个字</text>
+      <textarea name="con" id="essayCon" auto-focus maxlength="{{maxLen}}" bindinput="bindText" value="{{con}}"></textarea>
+    </view>
+	</view>
+</view>

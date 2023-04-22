@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="my-smile">
+			<view class="smiles clearfix" bindtap="smileTap">
+				<view class="smile clearfix">
+					<view class="eye-left"></view>
+					<view class="eye-right"></view>
+					<view class="lip"></view>
+				</view>
+			</view>
+			<view class="add" bindtap="onAddTap">
+				<view class="add-con">
+					<view class="col"></view>
+					<view class="row"></view>
+				</view>
+				<view class="thr"></view>
+			</view>
+		</view>
+</view>
